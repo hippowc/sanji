@@ -1,28 +1,18 @@
 # 数据与中间件
 
-> **状态：** 骨架提纲。
-
-## 本文目标
-
-覆盖最小生产中的 **事务型存储、缓存、消息、对象存储**，以及 **API 形态与 BFF**；可选搜索/分析标为扩展。
+本卷覆盖最小生产中常见的 **事务存储、缓存、消息、对象存储** 以及 **API 形态与 BFF**。默认 **托管优先**；自建仅在合规或成本奇点出现时讨论。
 
 ## 文档索引
 
-| 文档 | 说明 |
+| 文档 | 内容 |
 |------|------|
-| [关系型与 OLTP](./oltp.md) | 托管 RDS 选型、连接池、备份 |
-| [缓存（Redis）](./cache.md) | 典型场景与常见问题 |
-| [消息与异步](./messaging.md) | 队列 vs 流、幂等 |
-| [对象存储](./object-storage.md) | 静态资源与归档 |
-| [API 形态与 BFF](./api-and-bff.md) | REST/GraphQL/gRPC、移动端聚合层 |
-
-## 建议撰写要点（总）
-
-- **托管优先**：与公有云假设一致；自建仅在有强约束时讨论。
-- **与运行时**：连接串、网络分区、安全组 / 私有链接概要。
-- **扩展**：全文搜索、OLAP、数据湖列为单独演进章节（待写时可 stub）。
+| [关系型与 OLTP](./oltp.md) | RDS 类服务、连接池、备份 |
+| [缓存（Redis）](./cache.md) | 场景、一致性、故障模式 |
+| [消息与异步](./messaging.md) | 队列与流、幂等 |
+| [对象存储](./object-storage.md) | 静态资源、生命周期 |
+| [API 形态与 BFF](./api-and-bff.md) | REST/GraphQL/gRPC、BFF |
 
 ## 相关链接
 
-- [数据库迁移与发布](../cicd/db-migrations-and-release.md)
+- [数据库迁移](../cicd/db-migrations-and-release.md)
 - [备份恢复](../operations/backup-restore.md)

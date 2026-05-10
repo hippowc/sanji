@@ -1,38 +1,42 @@
-# 软件工程与云平台交付 — 知识体系（参考）
+# 软件工程与云平台交付 — 知识体系
 
-面向 **公有云上搭一套最小生产（Minimal Production）** 的体系化参考：覆盖交付、运行时、数据、网络与安全、可观测与运维。正文 **中文**；产品名、CLI、API 保留常用英文。
+面向在 **公有云** 上落地 **最小生产（Minimal Production）** 的体系化参考：覆盖平台契约、开发、CI/CD、运行时、数据、网络与安全、可观测与运维。叙述语言为 **中文**；产品名、CLI、RFC 与代码标识保留常用英文。
 
-> **状态：** 骨架与提纲已就位；各文件内「建议撰写要点」供后续逐章充实。
+**维护说明：** 技术栈与托管服务名称会随云厂商迭代而变化；正文强调 **能力与选型维度**，具体控制台路径请以当前官方文档为准。
 
-## 阅读路线（推荐）
+## 适用读者与边界
 
-1. [总纲](./overview/README.md) → [最小生产定义](./overview/minimal-production.md)
-2. [平台契约](./platform-contracts/README.md)（配置、环境、API 兼容）
-3. [网络与安全基线](./network-security/README.md)
-4. [运行时](./runtime/README.md) + [数据](./data/README.md)
-5. [CI/CD](./cicd/README.md)
+- **读者**：能为团队搭建或评审端到端交付链路的工程师、Tech Lead、具备基础云平台操作能力的一线开发者。
+- **公有云假设**：优先使用 **托管 VPC、负载均衡、托管数据库、托管密钥与监控**；多云之间用「能力类型」对标（如「托管 Kubernetes」「托管关系型数据库」），不绑定单一厂商控制台截图。
+- **非目标**：大数据数仓与实时计算平台建设、完整 FinOps 体系、特定语言的从零语法教程、通过某项厂商认证的全考点覆盖。
+
+## 阅读路线
+
+1. [总纲与最小生产](./overview/README.md) — 底线定义与术语
+2. [平台契约](./platform-contracts/README.md) — 配置、密钥、环境、API 兼容
+3. [网络与安全基线](./network-security/README.md) — VPC、IAM、TLS、边界防护
+4. [运行时](./runtime/README.md) + [数据](./data/README.md) — 计算形态与状态存储
+5. [CI/CD](./cicd/README.md) — 从提交到发布的工程化闭环
 6. [可观测性](./observability/README.md) + [运维与成本](./operations/README.md)
-7. [开发](./development/README.md)（语言与多端篇幅最大，可在骨架搭好后展开）
+7. [开发](./development/README.md) — Java / Python / Go / TypeScript 与多端实践（篇幅最长，可按需选读）
+
+个人落地、拓扑与 ADR 建议写在 [`articles/scenes/engineering`](../../articles/scenes/engineering/README.md)，本目录保持 **可复用的通用参考**。
 
 ## 各卷索引
 
-| 卷 | 路径 | 说明 |
-|----|------|------|
-| 总纲 | [overview/](overview/README.md) | 边界、假设、术语、最小生产底线 |
-| 平台契约 | [platform-contracts/](platform-contracts/README.md) | 配置/密钥、环境晋升、日志与追踪约定、API 版本 |
-| 开发 | [development/](development/README.md) | Java/Python/Go/TS；服务端/Web/桌面/移动 |
-| CI/CD | [cicd/](cicd/README.md) | 流水线、制品、身份与密钥、迁移与发布、移动端 |
-| 运行时 | [runtime/](runtime/README.md) | 从小到大演进、托管 K8s 何时值得 |
-| 数据 | [data/](data/README.md) | OLTP、缓存、消息、对象存储、API 形态与 BFF |
-| 网络与安全 | [network-security/](network-security/README.md) | VPC、暴露面、IAM、TLS、WAF/限流 |
-| 可观测性 | [observability/](observability/README.md) | 日志、指标与 SLO、链路、告警与 Runbook |
-| 运维与成本 | [operations/](operations/README.md) | 备份恢复、变更回滚、容量与账单 |
+| 卷 | 路径 |
+|----|------|
+| 总纲 | [overview/](overview/README.md) |
+| 平台契约 | [platform-contracts/](platform-contracts/README.md) |
+| 开发 | [development/](development/README.md) |
+| CI/CD | [cicd/](cicd/README.md) |
+| 运行时 | [runtime/](runtime/README.md) |
+| 数据 | [data/](data/README.md) |
+| 网络与安全 | [network-security/](network-security/README.md) |
+| 可观测性 | [observability/](observability/README.md) |
+| 运维与成本 | [operations/](operations/README.md) |
 
-## 与个人笔记的配合
+## 与工具箱其它目录的关系
 
-- **本目录**：偏客观参考、选型维度与检查清单。  
-- **个人落地与 ADR**：写在 [`articles/scenes/engineering/`](../../articles/scenes/engineering/README.md)，此处用链接互指。
-
-## 与现有 toolbox 的关系
-
-- 具体 **开源仓库** 索引见 [`../repos/`](../repos/README.md)；本体系正文可在表格中引用对应主题文件。
+- 开源仓库索引：[repos/](../repos/README.md)
+- 语言与库的补充条目：[languages/](../languages/README.md)、[libraries/](../libraries/README.md)、[services/](../services/README.md)

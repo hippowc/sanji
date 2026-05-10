@@ -1,43 +1,34 @@
 # 开发：语言、多端与工程化
 
-> **状态：** 骨架提纲。
+本卷面向 **Java、Python、Go、TypeScript** 四类语言，以及 **服务端、Web、桌面、移动** 四类交付形态，给出 **工程化清单与选型维度**。正文不是语法教程，而是帮助你在公有云最小生产语境下 **选对默认值与门禁**。
 
-## 本文目标
+## 阅读顺序建议
 
-围绕 **Java、Python、Go、TypeScript** 与 **服务端 / Web / 桌面 / 移动（含移动端）**，给出工程化检查项与典型栈 **选型维度**（非教程全文）。
+1. [横切：仓库、测试与本地开发](./cross-cutting.md)  
+2. 语言篇（按需）：[Java](./java.md) · [Python](./python.md) · [Go](./go.md) · [TypeScript](./typescript.md)  
+3. 端篇：[服务端](./server-side.md) · [Web](./web.md) · [桌面](./desktop.md) · [移动](./mobile.md)
+
+## 与平台契约的关系
+
+配置外部化、API 兼容、日志字段等统一见 [平台契约](../platform-contracts/README.md)。
 
 ## 文档索引
 
-### 横切
+### 横切与语言
 
 | 文档 | 说明 |
 |------|------|
-| [横切：仓库、测试与本地开发](./cross-cutting.md) | 分支、Code Review、测试分层、本地依赖 |
-
-### 语言
-
-| 文档 | 说明 |
-|------|------|
-| [Java](./java.md) | 工具链、构建、测试、打包 |
-| [Python](./python.md) | 同上 |
-| [Go](./go.md) | 同上 |
-| [TypeScript](./typescript.md) | 同上（含 Node 运行时侧） |
+| [cross-cutting.md](./cross-cutting.md) | 分支、评审、测试金字塔、本地环境 |
+| [java.md](./java.md) | JVM 生态与 Spring 系常见默认 |
+| [python.md](./python.md) | 解释器、依赖锁、ASGI/WSGI |
+| [go.md](./go.md) | 模块、静态分析、并发模型 |
+| [typescript.md](./typescript.md) | 前后端 TS、构建与类型门禁 |
 
 ### 端
 
 | 文档 | 说明 |
 |------|------|
-| [服务端](./server-side.md) | 框架选型维度、同步与异步、幂等与限流入口 |
-| [Web 前端](./web.md) | 构建、CSR/SSR、环境变量与前端可观测接入点 |
-| [桌面客户端](./desktop.md) | Electron / Tauri 等维度、自动更新与安全 |
-| [移动客户端](./mobile.md) | 构建签名、分发渠道、与后端契约 |
-
-## 建议撰写要点（总）
-
-- 每篇采用统一小节：**工具链与版本策略、依赖锁定、静态检查与格式化、测试与门禁、打包形态、调试要点**。
-- 与 [平台契约](../platform-contracts/README.md) 对齐配置与 API 约定。
-
-## 相关链接
-
-- [CI/CD](../cicd/README.md)
-- [工具箱仓库索引](../../repos/README.md)
+| [server-side.md](./server-side.md) | API、幂等、任务队列 |
+| [web.md](./web.md) | CSR/SSR、CDN、前端安全 |
+| [desktop.md](./desktop.md) | Electron/Tauri、更新 |
+| [mobile.md](./mobile.md) | 原生/跨端、签名与兼容 |
