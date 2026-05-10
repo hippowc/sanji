@@ -18,7 +18,8 @@
 4. [运行时](./runtime/README.md) + [数据](./data/README.md) — 计算形态与状态存储
 5. [CI/CD](./cicd/README.md) — 从提交到发布的工程化闭环
 6. [可观测性](./observability/README.md) + [运维与成本](./operations/README.md)
-7. [开发](./development/README.md) — Java / Python / Go / TypeScript 与多端实践（篇幅最长，可按需选读）
+7. [开发](./development/README.md) — Java / Python / Go / TypeScript 与多端实践（篇幅最长，可按需选读）  
+8. [场景化参考技术栈](./stacks/README.md) — **以核心系统（如 PostgreSQL）为轴**，组合 PostgREST、IdP、网关等形成 BaaS 等端到端范式（与单纯零件清单不同）
 
 个人落地、拓扑与 ADR 建议写在 [`articles/scenes/engineering`](../../articles/scenes/engineering/README.md)，本目录保持 **可复用的通用参考**。
 
@@ -35,9 +36,11 @@
 | 网络与安全 | [network-security/](network-security/README.md) |
 | 可观测性 | [observability/](observability/README.md) |
 | 运维与成本 | [operations/](operations/README.md) |
+| 场景参考栈 | [stacks/](stacks/README.md) — **核心 + 分层组合**（例：PostgreSQL 核心 BaaS） |
 
 ## 与工具箱其它目录的关系
 
-- **场景 ↔ 常用开源对照表（推荐）：** [oss-landscape.md](./oss-landscape.md) — 与各卷正文互补，并链回 [`repos/`](../repos/README.md) 中你已整理的 Star 主题。
+- **场景化组合选型（Recipe）：** [stacks/README.md](./stacks/README.md) — 类似 Supabase「Postgres + PostgREST + IdP + Kong…」的 **范式级** 叙事。  
+- **场景 ↔ 常用开源对照表（零件）：** [oss-landscape.md](./oss-landscape.md) — 与各卷正文互补，并链回 [`repos/`](../repos/README.md) 中你已整理的 Star 主题。
 - 开源仓库索引：[repos/](../repos/README.md)
 - 语言与库的补充条目：[languages/](../languages/README.md)、[libraries/](../libraries/README.md)、[services/](../services/README.md)

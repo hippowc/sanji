@@ -21,5 +21,6 @@
 
 ## 相关链接
 
+- [场景化参考技术栈（组合范式）](../stacks/README.md)
 - [平台契约：环境与 API](../platform-contracts/environments-and-api-compat.md)
 - [网络与安全：概览](../network-security/README.md)
