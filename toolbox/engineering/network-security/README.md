@@ -10,6 +10,11 @@
 | [IAM 与密钥](./iam-secrets.md) | 最小权限、审计 |
 | [TLS、WAF 与限流](./tls-waf-ddos.md) | 加密与边界 |
 
+## 开源生态参考
+
+- **场景对照表：** [场景与开源技术对照 §5、§6](../oss-landscape.md)（Caddy、Envoy、cert-manager、Vault / Keycloak、OPA 等）  
+- **本库 Star：** [网络 / 代理 / Web](../../repos/networking-proxy.md)
+
 ## 相关链接
 
 - [最小生产定义](../overview/minimal-production.md)

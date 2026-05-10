@@ -14,6 +14,11 @@
 - **匹配团队运维半径**：抽象层级越高，自定义空间越小，运维负担越低。  
 - **与服务网格解耦**：多数最小生产不需要网格；需要时再引入。
 
+## 开源生态参考
+
+- **场景对照表：** [场景与开源技术对照 §3](../oss-landscape.md)（Kubernetes、Helm、ingress-nginx、cert-manager 等）  
+- **本库 Star：** [Kubernetes / 本地集群](../../repos/kubernetes-infra.md)
+
 ## 相关链接
 
 - [网络拓扑](../network-security/network-exposure.md)

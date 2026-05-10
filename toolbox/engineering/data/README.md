@@ -12,6 +12,11 @@
 | [对象存储](./object-storage.md) | 静态资源、生命周期 |
 | [API 形态与 BFF](./api-and-bff.md) | REST/GraphQL/gRPC、BFF |
 
+## 开源生态参考
+
+- **场景对照表：** [场景与开源技术对照 §4、§9](../oss-landscape.md)（PostgreSQL、Redis、Kafka、MinIO、API 网关等）  
+- **本库 Star：** [存储 / 后端](../../repos/storage-backend.md)、[数据 / NLP](../../repos/data-nlp.md)
+
 ## 相关链接
 
 - [数据库迁移](../cicd/db-migrations-and-release.md)

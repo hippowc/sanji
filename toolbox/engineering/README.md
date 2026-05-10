@@ -38,5 +38,6 @@
 
 ## 与工具箱其它目录的关系
 
+- **场景 ↔ 常用开源对照表（推荐）：** [oss-landscape.md](./oss-landscape.md) — 与各卷正文互补，并链回 [`repos/`](../repos/README.md) 中你已整理的 Star 主题。
 - 开源仓库索引：[repos/](../repos/README.md)
 - 语言与库的补充条目：[languages/](../languages/README.md)、[libraries/](../libraries/README.md)、[services/](../services/README.md)

@@ -11,6 +11,11 @@
 | [链路追踪](./tracing.md) | 采样与关联 |
 | [告警与 Runbook](./alerting-runbooks.md) | 降噪与演练 |
 
+## 开源生态参考
+
+- **场景对照表：** [场景与开源技术对照 §7](../oss-landscape.md)（Prometheus、Grafana、Loki、Jaeger、OpenTelemetry Collector 等）  
+- **本库索引：** [可观测性开源列表](../../repos/observability.md)
+
 ## 相关链接
 
 - [平台契约：日志字段](../platform-contracts/config-and-secrets.md)

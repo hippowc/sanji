@@ -9,6 +9,11 @@
 | [配置、密钥与十二因子实践](./config-and-secrets.md) | 环境变量、密钥管理、反模式 |
 | [环境晋升与 API 兼容](./environments-and-api-compat.md) | dev/stage/prod、移动端兼容 |
 
+## 开源生态参考
+
+- **场景对照表：** [场景与开源技术对照 §6](../oss-landscape.md)（Vault / OpenBao、SOPS、Keycloak 等与密钥、身份相关的自托管选项）  
+- **说明：** 公有云最小生产通常优先 **托管 Secrets Manager + OIDC**；上表用于对标与混合云场景。
+
 ## 与其它卷的交叉点
 
 - CI 侧密钥：[密钥与身份（OIDC）](../cicd/secrets-identity.md)

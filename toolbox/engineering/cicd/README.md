@@ -17,6 +17,11 @@
 2. **自动化优先**：重复手工步骤是故障源。  
 3. **权限最小**：CI 仅能部署到指定环境资源。
 
+## 开源生态参考
+
+- **场景对照表：** [场景与开源技术对照 §2](../oss-landscape.md)（Jenkins、Tekton、Argo CD、Trivy、Cosign 等）  
+- **本库索引：** [CI/CD / GitOps 开源列表](../../repos/cicd-gitops.md)；亦可搭配 [Kubernetes](../../repos/kubernetes-infra.md)、[网络 / 入口](../../repos/networking-proxy.md)
+
 ## 相关链接
 
 - [开发横切](../development/cross-cutting.md)

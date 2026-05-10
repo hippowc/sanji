@@ -7,7 +7,7 @@
 | 目录 | 用途 |
 |------|------|
 | [engineering/](engineering/README.md) | 软件工程与公有云最小生产（体系化参考） |
-| [repos/](repos/README.md) | 远程仓库（GitHub / GitLab 等） |
+| [repos/](repos/README.md) | Star 与主题索引（含 CI/CD、可观测等开源清单） |
 | [languages/](languages/README.md) | 语言级：版本、生态、常用入口 |
 | [libraries/](libraries/README.md) | 库、框架、模块 |
 | [services/](services/README.md) | SaaS、自托管服务、在线工具 |

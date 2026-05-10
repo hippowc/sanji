@@ -9,6 +9,7 @@
 | [最小生产定义](./minimal-production.md) | 生产环境底线清单与可延后项 |
 | [术语表](./glossary.md) | 常用缩写与概念对齐 |
 | [卓越架构自检（精简）](./well-architected-checklist.md) | 上线前 / 季度复盘表 |
+| [场景与开源技术对照](../oss-landscape.md) | 按场景列出常用开源项目并链回 `repos/` |
 
 ## 设计原则（贯穿全书）
 

@@ -32,3 +32,8 @@
 | [web.md](./web.md) | CSR/SSR、CDN、前端安全 |
 | [desktop.md](./desktop.md) | Electron/Tauri、更新 |
 | [mobile.md](./mobile.md) | 原生/跨端、签名与兼容 |
+
+## 开源生态参考
+
+- **场景对照表：** [场景与开源技术对照 §1、§10](../oss-landscape.md)（开发工具链、移动端 / 桌面框架）  
+- **本库 Star：** [CLI / 终端](../../repos/cli-tooling.md)、[前端 / Web / 桌面](../../repos/frontend-desktop-web.md)、[JVM](../../repos/jvm-java-kotlin.md)
