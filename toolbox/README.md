@@ -6,6 +6,7 @@
 
 | 目录 | 用途 |
 |------|------|
+| [engineering/](engineering/README.md) | 软件工程与公有云最小生产（体系化参考） |
 | [repos/](repos/README.md) | 远程仓库（GitHub / GitLab 等） |
 | [languages/](languages/README.md) | 语言级：版本、生态、常用入口 |
 | [libraries/](libraries/README.md) | 库、框架、模块 |

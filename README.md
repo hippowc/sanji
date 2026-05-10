@@ -11,7 +11,7 @@
 | 路径 | 用途 |
 |------|------|
 | [articles/](articles/README.md) | 个人文章：按日期 / 按场景 / 收件箱 |
-| [toolbox/](toolbox/README.md) | 工具箱：仓库、语言生态、库模块、服务等 |
+| [toolbox/](toolbox/README.md) | 工具箱：工程参考、仓库、语言生态、库模块、服务等 |
 | [assets/images/](assets/images/) | 文章与笔记配图 |
 
 ---
@@ -26,7 +26,7 @@
 2. **按时间的文章**只放在 `articles/dated/`，建议按年分子目录 `YYYY/`，文件名为 `YYYY-MM-DD.md` 或 `YYYY-MM-DD-短标题.md`。
 3. **按场景的文章**只放在 `articles/scenes/`；场景用文件夹表示（如 `work/`、`learning/`），文件名不强制带日期；需要时用文末或 YAML 标 `date`。
 4. **尚未归类**的片段放在 `articles/inbox/`，并设定习惯：**每周或每月**清理到 `dated` / `scenes` / `toolbox`，避免 inbox 无限膨胀。
-5. **工具箱**不限 GitHub：仓库索引在 `toolbox/repos/`，语言生态在 `toolbox/languages/`，库与模块在 `toolbox/libraries/`，线上或自托管服务在 `toolbox/services/`；一时无法归类用 `toolbox/misc/`。随手收集可先写在 **根目录 [`toolbox/inbox.md`](toolbox/inbox.md)**，再合并进对应分类。
+5. **工具箱**不限 GitHub：**软件工程与云上交付体系化参考**在 `toolbox/engineering/`；仓库索引在 `toolbox/repos/`，语言生态在 `toolbox/languages/`，库与模块在 `toolbox/libraries/`，线上或自托管服务在 `toolbox/services/`；一时无法归类用 `toolbox/misc/`。随手收集可先写在 **根目录 [`toolbox/inbox.md`](toolbox/inbox.md)**，再合并进对应分类。
 6. **归档**：不再活跃的项目笔记或过时清单，可迁至 `articles/archive/` 或 `toolbox/_archive/`（按需创建），主索引中保留指向或删除过时链接。
 
 ### 体裁与写法（对齐常见文档分层）

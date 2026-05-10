@@ -7,4 +7,8 @@
 
 ## 场景索引
 
-- （列出子文件夹与一句话说明）
+| 目录 | 说明 |
+|------|------|
+| [engineering/](engineering/README.md) | 工程落地手记、ADR、演练（与 `toolbox/engineering` 配套） |
+
+- （其它场景如 `work/`、`learning/` 等可自行补充）
